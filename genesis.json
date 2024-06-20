@@ -1,0 +1,26 @@
+{
+    "config": {
+    "chainId": 12345,
+    "homesteadBlock": 0,
+    "eip150Block": 0,
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "istanbulBlock": 0,
+    "berlinBlock": 0,
+    "clique": {
+    "period": 5,
+    "epoch": 30000
+    }
+    },
+    "difficulty": "1",
+    "gasLimit": "8000000",
+    "extradata": "0x0000000000000000000000000000000000000000000000000000000000000000f8b5Db775E129b97De59aa5C1b2d8b8c462392130000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "alloc": {
+    "f8b5Db775E129b97De59aa5C1b2d8b8c46239213": { "balance": "1000000000000000000000" }
+    }
+    }
+    
+    geth --datadir data --networkid 150220241016 --unlock 0xf8b5Db775E129b97De59aa5C1b2d8b8c46239213 --allow-insecure-unlock --http --http.corsdomain="*" --http.api web3,eth,debug,personal,net,miner --miner.etherbase 0xf8b5Db775E129b97De59aa5C1b2d8b8c46239213

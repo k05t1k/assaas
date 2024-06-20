@@ -149,7 +149,7 @@ def get_ads(account):
             print("Нет доступных объявлений.")
         else:
             for ad in ads:
-                print(f"ID объявления: {ad[0]}, Цена: {Web3.fromWei(ad['price'], 'ether')} ether, ID недвижимости: {ad['estateId']}, Владелец: {ad['owner']}, Покупатель: {ad['buyer']}, Статус: {'Открыто' if ad['adType'] == 0 else 'Закрыто'}")
+                print(f"ID объявления: {ad[0]}, Цена: {Web3.fromWei(ad[1], 'ether')} ether, ID недвижимости: {ad[2]}, Владелец: {ad[3]}, Покупатель: {ad[4]}, Статус: {'Открыто' if ad[5] == 0 else 'Закрыто'}")
     except Exception as e:
         print(f"Ошибка получения списка объявлений: {e}")
 
